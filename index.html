@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSKY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">📚 Book Sky Library</div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+        <input type="text" id="search" placeholder="Search books by title or author...">
+    <div class="container" id="book-list">
+        <article class="book-container">
+            <img src="download.jpg">
+            <h2>Atomic Habits</h2>
+            <p>A practical guide to building good habits and breaking bad ones.</p>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+        </article>
+
+        <article class="book-container">
+            <img src="hh234.jpg">
+            <h2>Rich Dad Poor Dad</h2>
+            <p>Learn how money works and how to build wealth.</p>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+        </article>
+
+        <article class="book-container">
+            <img src ="image.png">
+            <h2>The Alchemist</h2>
+            <p>A story about dreams, destiny, and self-discovery.</p>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+        </article>
+    </div> 
+    <!-- Popup -->
+    <div class="pop-overlay" id="overlay"></div>
+    <div class="pop-box" id="popup">
+        <h2 id="popup-title">Add Book</h2>
+        <form id="book-form">
+            <input type="text" id="book-title-input" placeholder="Book Title" required>
+            <input type="text" id="book-author-input" placeholder="Book Author" required>
+            <textarea id="book-description-input" placeholder="Short Description" required></textarea>
+
+            <button type="submit" id="submit-btn">ADD</button>
+            <button type="button" id="cancel-pop">CANCEL</button>
+        </form>
+    </div>
+    </div>  <!-- popup ends -->
+
+<button class="add-button" id="add-pop-button">+</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

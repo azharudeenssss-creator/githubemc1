@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Reactjs"
+		},
+		{
+			"path": "../../reactjs18-3d-portfolio-main"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Website.html"
+	}
+}
